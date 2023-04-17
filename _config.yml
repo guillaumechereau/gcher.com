@@ -30,8 +30,10 @@ github_username:  guillaumechereau
 
 # Build settings
 theme: minima
+permalink: /:year-:month/:title:output_ext
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default.

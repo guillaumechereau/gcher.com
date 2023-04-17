@@ -21,7 +21,7 @@
 title: Guillaume Chereau Website
 email: guillaume@noctua-software.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A software engineer living in Taiwan.  Talk about programation mostly,
+  A software engineer living in Taiwan.  Talk about programming mostly,
   but sometimes math of physics.
 baseurl: ""
 url: "http://gcher.com"

@@ -29,6 +29,8 @@ twitter_username: guillaumecherea
 github_username:  guillaumechereau
 
 # Build settings
+markdown: kramdown
+mathjax: true
 theme: minima
 permalink: /:year-:month/:title:output_ext
 plugins:

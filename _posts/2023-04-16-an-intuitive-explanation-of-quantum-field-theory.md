@@ -14,21 +14,23 @@ Theory.
 This idea came to me after reading two books: "QED: The Strange Theory of Light
 and Matter" by Richard Feynman, and "Quantum Field Theory in a Nutshell", by A.
 Zee (that I only started).  Both books use path integrals, but in a different
-way, and this is what motivated this post.
+way, without much explanation, so I tried to came up with an explanation of
+where the relation came from and this is the result of my thought process.
 
 Note: this post became longer than I hoped.  Here is a tldr: I am trying to
 show that computing the path integral of a single particle moving through
-space-time (relativistic) is similar to computing the path integral of a
-lattice of coupled particles connected by springs but moving through space
-only.  Since the relativistic paths can 'go backward in time', when trying to
-define the partial sum of the paths at a fixed time, we need to account for the
-segments of paths coming from the future, making the 'pseudo' Lagrangian
-behaves similarly to many particles and anti particles.
+space-time is similar to computing the path integral of a lattice of coupled
+particles connected by springs but evolving through space only.  Since the
+relativistic paths can 'go backward in time', when trying to define the partial
+sum of the paths at a fixed 'time slice', we need to account for the segments
+of paths coming from the future, making the 'pseudo' Lagrangian behaves
+similarly to the non relativistic lattice.
 
 Big disclaimer: I am not a scientist and this is going to be extremely hand
 wavy.  I won't use any unit and just ignore mass and spin.  For the purpose
-of this post, a particle has just a position.  I'll ignore normalization and
-many other details.
+of this post, a particle has just a position.  I am pretty sure the math is
+wrong, and maybe the whole argument doesn't hold at all!  Readers that are
+familiar with the subject can maybe tell me if this makes some sense.
 
 # Path Integral for Quantum Mechanics.
 
@@ -142,7 +144,7 @@ of each particles.
 
 Let see some examples of transition for simple states:
 
-![Transitions values for the lattice](/assets/imgs/qft/lattice-transitions.png)
+![Transitions values for the lattice](/assets/imgs/qft/lattice_transitions.png)
 
 With great mathematical effort we could find and solve the Schrodinger equation
 for this system, but it's not our concern here.  We'll just assume that we have
@@ -160,11 +162,11 @@ in space-time with regard to their proper time τ(tau).
 
 Here is how it looks like for a few samples of paths:
 
-    TODO add an image.
+![Paths for a relativistic particle](/assets/imgs/qft/relativistic_paths.png)
 
-The number of path is infinite, even if we restrict ourself to a finite grid in
-both space and time, since a path can take an unbounded number of steps before
-reaching the point B.
+The number of paths is infinite, even if we restrict ourself to a finite grid
+in both space and time, since a path can take an unbounded number of steps
+before reaching the point B.
 
 The other change is that the kinetic energy is no more proportional to the
 squared speed, but also include a factor for the speed *in time*.  For a single
@@ -180,6 +182,9 @@ Can we still fix the time and compute a partial sum of all the paths crossing
 the time for all the positions?  Not really, because now a single path
 can potentially cross the fixed time line several times, in both directions.
 
+
+![Relativistic wavefunction](/assets/imgs/qft/relativistic_wavefunction.png)
+
 We can still try to make it work.  We have to track separately the partial
 sum for all the paths crossing once, then all the paths crossing twice, and
 so one, in both directions.  This can be done by assigning for each position
@@ -187,12 +192,12 @@ the number of times the time line has been crossed, with a number that can be
 positive or negative.  The wave function that used to assign a complex number
 to each state, like this:
 
-$$ \phi(S): C $$
+$$ \phi(S) → ℂ $$
 
 Now assigns a complex number to each possible function that assigns an
 integer to a state:
 
-$$ \phi(f(S): I): C $$
+$$ \phi(f(S) → I) → ℂ $$
 
 To visualise it, if we use limit the number of time a path can cross the
 line to only 5 possible numbers (-2, -1, 0, +1, +2), and we assume only
@@ -208,29 +213,29 @@ states.  The difference compared to before is that we have to take into
 account that each 'state' now consist of several possible paths, potentially
 connecting into each other.
 
-Here are some transition angles for simple cases:
+Here are some transition angles for simple cases.  Since it's a single
+particle there is no potential, but the kinetic energy needs to take into
+account both speed in space (X) *and* time (T).
 
-ADD PIC
+![Relativistic Transitions](/assets/imgs/qft/relativistic_transitions.png)
 
-We can see that the values are the same as for the non relativistic lattice of
-particles (we relate the lattice Y positions to the number of 'crossing' of
-the relativistic paths)
+The point to note is that in the case of a path moving diagonally the angle
+or rotation of the amplitude is zero, while a path moving straight in time
+will have a negative angle.  I also assume that a path turning around in
+time will have no impact on the amplitude.
 
-I think this shows that both systems, while totally different, have some
-similarity in their mathematical structure.
+Now if we associate the arrows directions of the path to the Y positions
+of our non relativistic lattice particles, we can see that the transition
+rules seems to relate up to a factor.  Both systems, while totally different,
+seem to share some similarity in the way we would compute the 'time slice' of
+the paths integrals.
 
-In the same way the centrifugal effect can gives rise to a "pseudo" force,
-the fact that the paths of a non relativistic particle can go back in time
-create a "pseudo" Lagrangian function similar to the one of lattice of
-particles.
+So this was my "demonstration".  In the same way the centrifugal effect can
+gives rise to a "pseudo" force, the fact that the paths of a non relativistic
+particle can go back in time create a "pseudo" Lagrangian function similar to
+the one of lattice of particles.
 
-
-Note: while writing this I realize that it is not explained how we are supposed
-to handle loops and non connected paths in the non relativistic particle case:
-
-ADD PIC OF TROUBLESOME CASES
-
-For the loops I think it should work out fine since they will never connect to
-a path reaching the final point and so will not contribute to the wavefunction
-at the final point.  For the disconnected paths I am not sure how we can
-explain how they will not affect the final sum.
+To finish I would say once again that this explanation is not rigorous at all.
+One thing that bothers me (and almost make me give up on writing this) is that
+it's not very clear how to handle loops and non connected paths, that would be
+part of the paths in the lattice model but not in the relativistic case.

@@ -10,9 +10,13 @@ Theory.
 
 This idea came to me after reading two books: "QED: The Strange Theory of Light
 and Matter" by Richard Feynman, and "Quantum Field Theory in a Nutshell", by A.
-Zee (that I only started).  Both books use path integrals, but in a different
-way, without much explanation, so I tried to came up with an explanation of
-where the relation came from and this is the result of my thought process.
+Zee (that I only started).  Both books use path integrals, but in a very
+different way: Feynman tells us that the particles can move anywhere they want
+in space *and time*, while Zee uses conventional 'forward in time only' paths
+but of a 'mattress' and not just one particle.
+
+I tried to came up with an explanation of where the relation came from and this
+is the result of my thought process.
 
 Note: this post became longer than I hoped.  Here is a tldr: I am trying to
 show that computing the path integral of a single particle moving through
@@ -23,10 +27,10 @@ sum of the paths at a fixed 'time slice', we need to account for the segments
 of paths coming from the future, making the 'pseudo' Lagrangian behaves
 similarly to the non relativistic lattice.
 
-Big disclaimer: I am not a scientist and this is going to be extremely hand
+Big disclaimer: I am not a scientist and this is going to be **extremely** hand
 wavy.  I won't use any unit and just ignore mass and spin.  For the purpose
 of this post, a particle has just a position.  I am pretty sure the math is
-wrong, and maybe the whole argument doesn't hold at all!  Readers that are
+wrong, and maybe the whole argument doesn't hold at all!  Readers
 familiar with the subject can maybe tell me if this makes some sense.
 
 # Path Integral for Quantum Mechanics.
@@ -70,14 +74,14 @@ To compute this value, we follow this algorithm:
 # Retrieving the present time
 
 The path integral formulation isn't commonly discussed (at least among
-non-physicist) and I think it's partly because it seems totally impractical
-to compute an infinite number of paths, and also because it's not obvious
-how this relates to our 'normal' perception of the world as some kind of
+non-physicist) and I think it's partly because it seems impractical
+to compute an infinite number of paths, but also because it's not obvious
+how this relates to our *normal* perception of the world as some kind of
 state machine, going from a time $T$ to a time $ T + 1 $.
 
 To simplify the computation of a very large number of paths, we can
 make the following observation: all the partial segments of a path will be
-used by many paths.  How can we avoid recomputing them each time?  The
+summed by many paths.  How can we avoid recomputing them each time?  The
 trick is to realize that is we draw a line at a given time, all the paths
 will cross it at one position.  If we precomputed the partial sum of all
 the paths below this line for all positions, we can use it at a starting
@@ -107,7 +111,7 @@ grid.
 # A more complicated system
 
 Let see quickly how the path integral would work for a system of particles.
-Specifically we want to consider a one dimension lattice of particles
+Specifically, we want to consider a one dimension lattice of particles
 that can each only move vertically, while being connected to their neighbor
 with little springs, like so:
 
@@ -118,9 +122,9 @@ array of positions in $Y$, one for each particle.  To keep things simple, if
 we assume that we have 100 particles and we can only have 5 possible $Y$
 values, the number of states become $ N = 5^{100} $.
 
-The number of possible path remains $T^N$.  We can still represent a path in a
-diagram, but we need to remember that each $X$ axis position now sets the
-position of all the particles.
+The number of possible path remains $T^N = T^{5^{100}}$.
+We can still represent a path in a diagram, but we need to remember that each
+$X$ axis position now sets the position of all the particles.
 
 The book from A. Zee almost immediately starts with the study of such a system,
 and then tell us that the lattice excitation can be seen as the evolution
@@ -129,25 +133,23 @@ relation comes from.
 
 Here I will give a try at showing this relation.  First lets see a bit
 how the amplitudes are computed for this system, still assuming a toy
-model of discrete position and time.
+model of discrete positions and times.
 
 The rule to compute the amplitude for a given path remains the same: we start
-at the beginning and for each step we consider the start and end states and
+at the beginning and for each time step we consider the start and end states, and
 compute the $V - T$ value to use as an angle increment.  All we need is a
-function that given two states returns the amplitude rotation angle for
+function which given two states returns the amplitude rotation angle for
 the transition.  This function computes the average of the potential energy
 for both state and subtracts kinetic energy for the difference in position
 of each particles.
 
-Let see some examples of transition for simple states:
+Let see some examples of 'transitions angle' for simple states:
 
 ![Transitions values for the lattice](/imgs/qft/lattice_transitions.png)
 
 With great mathematical effort we could find and solve the Schrodinger equation
-for this system, but it's not our concern here.  We'll just assume that we have
-an infinite computer at our disposition that can sum all the path integrals if
-needed.  Once again I need to stress that the goal here is just to build some
-intuition.
+for this system, but it's not our concern here, we will stick with the path
+integral formulation.
 
 
 # Non relativistic particles
@@ -155,7 +157,7 @@ intuition.
 Now we can finally start to explain Quantum Field Theory.  We are going to
 use the same framework of sum over paths, except that now the particles are
 relativistic: instead of moving in space with regard to time, they move
-in space-time with regard to their proper time τ(tau).
+in space-time with regard to their proper time $τ$(tau).
 
 Here is how it looks like for a few samples of paths:
 
@@ -166,7 +168,7 @@ in both space and time, since a path can take an unbounded number of steps
 before reaching the point B.
 
 The other change is that the kinetic energy is no more proportional to the
-squared speed, but also include a factor for the speed *in time*.  For a single
+squared speed, but also includes a factor for the speed *in time*.  For a single
 dimension particle, Instead of:
 
 $$ T \sim (dx/dt)² $$
@@ -175,16 +177,19 @@ We use:
 
 $$ T \sim (dx/dτ)² - (dt/dτ)² $$
 
-Can we still fix the time and compute a partial sum of all the paths crossing
-the time for all the positions?  Not really, because now a single path
-can potentially cross the fixed time line several times, in both directions.
+The minus sign is what makes time different from space.
+
+Can we still fix a time-line and compute a partial sum of all the paths
+crossing it at all the positions?  Not really, because now a single path can
+potentially cross the fixed time line several times, in both directions, as
+shown here:
 
 
 ![Relativistic wavefunction](/imgs/qft/relativistic_wavefunction.png)
 
 We can still try to make it work.  We have to track separately the partial
 sum for all the paths crossing once, then all the paths crossing twice, and
-so one, in both directions.  This can be done by assigning for each position
+so on, in both directions.  This can be done by assigning for each position
 the number of times the time line has been crossed, with a number that can be
 positive or negative.  The wave function that used to assign a complex number
 to each state, like this:
@@ -196,12 +201,12 @@ integer to a state:
 
 $$ \phi(f(S) → I) → ℂ $$
 
-To visualise it, if we use limit the number of time a path can cross the
-line to only 5 possible numbers (-2, -1, 0, +1, +2), and we assume only
+To visualise it, if we limit the number of time a path can cross the
+line to only 5 possible numbers $(-2, -1, 0, +1, +2)$, and we assume only
 100 possible positions in the one dimension space.  The number of inputs
-for the wave function is $N = 5^{100}$.  Coincidently the same number we got
-for the non relativistic lattice of 100 particles, so we already start to
-see where the similarity comes from.
+for the wave function is $N = 5^{100}$.  Coincidently this is the same number
+we got for the non relativistic lattice of 100 particles, so we already start
+to see where the similarity comes from.
 Note that the wavefunction now keeps track of half loops even before they get
 connected to a valid path connecting the start and end points.
 

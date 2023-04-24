@@ -1,0 +1,36 @@
+baseURL: http://gcher.com
+languageCode: en-us
+title: Guillaume Chereau Website
+theme: "PaperMod"
+
+menu:
+  main:
+    - identifier: About
+      name: About
+      url: /about/
+      weight: 10
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  title: Guillaume Chereau Website
+  description: >-
+    A software engineer living in Taiwan.  Talk about programming mostly,
+    but sometimes math of physics.
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+  DateFormat: "2006 January 2"
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Guillaume Chereau, Software Engineer"
+    Content: Welcome to my blog, where I talk mostly about programming.
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/guillaumecherea"
+    - name: github
+      url: "https://github.com/guillaumechereau"

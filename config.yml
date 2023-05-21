@@ -22,7 +22,7 @@ params:
   ShowCodeCopyButtons: true
   ShowPostNavLinks: true
   DateFormat: "2006 January 2"
-  comments: true
+  # comments: true
 
   # home-info mode
   homeInfoParams:

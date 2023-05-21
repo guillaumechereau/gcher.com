@@ -3,7 +3,8 @@ categories:
   - C
   - code
   - pattern
-aliases: /names-parameters-in-c.html
+aliases: /named-parameters-in-c.html
+commentsUrl: http://blog.noctua-software.com/named-parameters-in-c.html
 subtitle: material for the IOCCC
 title: Named parameters in C
 date: 2014-07-14

@@ -1,0 +1,12 @@
+
+<script src="https://embedd.io/embedd.min.js">
+{
+    {{ if .Params.commentsUrl }}
+    "url": "{{ .Params.commentsUrl | safeHTML}}",
+    {{ end }}
+    "both": false,
+    "service": "hn",
+    "limit": 10,
+    "loadMore": true
+} 
+</script>

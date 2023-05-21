@@ -6,6 +6,7 @@ categories:
   - graphics
   - opengl
 aliases: /noc_turtle.html
+commentsUrl: http://blog.noctua-software.com/noc_turtle.html
 subtitle: Introducing noc_turtle library
 title: Procedural graphics generation in C
 date: 2015-06-12

@@ -5,6 +5,7 @@ categories:
   - code
   - pattern
 aliases: /cpp-patterns-using-plain-c.html
+commentsUrl: http://blog.noctua-software.com/cpp-patterns-using-plain-c.html
 title: C++ patterns using plain C
 date: 2014-06-22
 ---

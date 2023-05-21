@@ -4,6 +4,7 @@ categories:
   - graphics
   - games
 aliases: /procedural-colors-for-game.html
+commentsUrl: http://blog.noctua-software.com/procedural-colors-for-game.html
 title: Procedural colors for video games
 date: 2014-10-06
 ---

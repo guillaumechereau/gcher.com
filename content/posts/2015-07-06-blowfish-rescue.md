@@ -2,7 +2,7 @@
 categories:
   - game
   - noctua
-alias: /blowfish-rescue.html
+aliases: /blowfish-rescue.html
 subtitle: My new video game
 title: Blowfish Rescue 1.0 Released
 date: 2015-07-06

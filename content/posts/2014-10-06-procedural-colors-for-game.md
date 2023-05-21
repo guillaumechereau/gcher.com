@@ -3,7 +3,7 @@ categories:
   - code
   - graphics
   - games
-alias: /procedural-colors-for-game.html
+aliases: /procedural-colors-for-game.html
 title: Procedural colors for video games
 date: 2014-10-06
 ---

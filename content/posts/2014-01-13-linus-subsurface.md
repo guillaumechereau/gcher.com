@@ -5,7 +5,7 @@ categories:
   - joke
   - git
   - code
-alias: /linus-subsurface.html
+aliases: /linus-subsurface.html
 subtitle: Linus Torvald is a funny guy
 title: Linus subsurface funny commits
 date: 2014-01-13

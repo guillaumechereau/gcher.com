@@ -3,7 +3,7 @@ categories:
   - quantum
   - multiple
   - universe
-alias-from: /win-lottery.html
+aliases: /win-lottery.html
 subtitle: 0.000005 percent of the time, it works 100 percent of the time
 title: How I made my parallel self win the lottery
 date: 2015-12-20

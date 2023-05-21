@@ -3,7 +3,7 @@ categories:
   - C
   - code
   - pattern
-alias: /names-parameters-in-c.html
+aliases: /names-parameters-in-c.html
 subtitle: material for the IOCCC
 title: Named parameters in C
 date: 2014-07-14

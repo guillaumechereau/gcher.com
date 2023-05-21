@@ -5,7 +5,7 @@ categories:
   - games
   - voxel
   - procedural
-alias: /goxel-procedural.html
+aliases: /goxel-procedural.html
 title: Goxel 3D procedural rendering
 date: 2016-03-10
 ---

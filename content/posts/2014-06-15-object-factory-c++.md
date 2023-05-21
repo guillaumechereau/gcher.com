@@ -5,7 +5,7 @@ categories:
   - pattern
   - video
   - game
-alias: /object-factory-c++.html
+aliases: /object-factory-c++.html
 subtitle: A nice trick for video game code design
 title: Automatic object factory in C++
 date: 2014-06-15

@@ -4,7 +4,7 @@ categories:
   - stellarium
   - noctuasky
   - emscripten
-alias: /noctuasky.html
+aliases: /noctuasky.html
 title: Introducing Noctua Sky
 date: 2017-03-01
 ---

@@ -3,7 +3,7 @@ categories:
   - image
   - javascript
   - emscripten
-alias: /image-color-whell-generator.html
+aliases: /image-color-whell-generator.html
 subtitle: Turn any image into a Hue/Luminosity color wheel
 title: Image color wheel generator
 date: 2014-02-16

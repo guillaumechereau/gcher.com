@@ -4,7 +4,7 @@ categories:
   - math
   - geometry
   - python
-alias: /dodecahedron.html
+aliases: /dodecahedron.html
 title: Generating the dodecahedron rotation group with python
 date: 2017-06-19
 ---

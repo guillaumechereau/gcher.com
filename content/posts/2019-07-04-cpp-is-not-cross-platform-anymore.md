@@ -3,7 +3,7 @@ categories:
   - C
   - C++
   - rant
-alias: /cpp-is-not-cross-platform-anymore.html
+aliases: /cpp-is-not-cross-platform-anymore.html
 title: C++ is not cross platform anymore
 date: 2019-07-04
 ---

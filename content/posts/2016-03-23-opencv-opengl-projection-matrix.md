@@ -5,7 +5,7 @@ categories:
   - C++
   - code
   - math
-alias: /opencv-opengl-projection-matrix.html
+aliases: /opencv-opengl-projection-matrix.html
 title: OpenCV Camera to OpenGL Projection
 date: 2016-03-23
 ---

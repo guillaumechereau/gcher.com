@@ -5,7 +5,7 @@ categories:
   - procedural
   - graphics
   - opengl
-alias: /noc_turtle.html
+aliases: /noc_turtle.html
 subtitle: Introducing noc_turtle library
 title: Procedural graphics generation in C
 date: 2015-06-12

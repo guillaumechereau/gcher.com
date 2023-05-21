@@ -3,7 +3,7 @@ categories:
   - gtd
   - reming
   - productivity
-alias: personal-calendar-using-remind.html
+aliases: personal-calendar-using-remind.html
 subtitle: How I keep organised
 title: My personal calendar using Remind
 date: 2014-02-24

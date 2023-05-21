@@ -5,7 +5,7 @@ categories:
   - design
   - inkscape
   - icons
-alias: /goxel-icons.html
+aliases: /goxel-icons.html
 title: Creating application icons with inkscape
 date: 2018-04-18
 ---

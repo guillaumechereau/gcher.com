@@ -6,7 +6,7 @@ categories:
   - spino
   - POV
   - display
-alias: doom-on-spino.html
+aliases: doom-on-spino.html
 title: Hacking Doom code for transparent POV display
 date: 2016-09-02
 ---

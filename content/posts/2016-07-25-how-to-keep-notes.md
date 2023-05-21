@@ -5,7 +5,7 @@ categories:
   - text
   - file
   - orgmode
-alias: how-to-keep-notes.html
+aliases: how-to-keep-notes.html
 title: Keeping notes in unformatted text files
 date: 2016-07-25
 ---

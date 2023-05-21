@@ -5,7 +5,7 @@ categories:
   - javascript
   - duktape
   - embedded
-alias: /lua-vs-duktape.html
+aliases: /lua-vs-duktape.html
 title: Lua vs Duktape for embedded scripting language
 date: 2018-12-22
 ---

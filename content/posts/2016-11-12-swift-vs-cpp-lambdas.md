@@ -5,7 +5,7 @@ categories:
   - C++
   - lambda
   - function
-alias: /swift-vs-cpp-lambdas.html
+aliases: /swift-vs-cpp-lambdas.html
 subtitle: Swan vs Platypus
 title: 'Swift vs C++: lambda functions'
 date: 2016-11-12

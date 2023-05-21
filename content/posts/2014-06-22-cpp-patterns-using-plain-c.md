@@ -4,7 +4,7 @@ categories:
   - C
   - code
   - pattern
-alias: /cpp-patterns-using-plain-c.html
+aliases: /cpp-patterns-using-plain-c.html
 title: C++ patterns using plain C
 date: 2014-06-22
 ---

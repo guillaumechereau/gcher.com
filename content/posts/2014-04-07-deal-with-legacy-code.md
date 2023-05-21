@@ -2,7 +2,7 @@
 categories:
   - software
   - opinion
-alias: /deal-with-legacy-code.html
+aliases: /deal-with-legacy-code.html
 subtitle: Something we all hate, but all have to do at some point
 title: How to deal with spaghetti legacy code
 date: 2014-04-07

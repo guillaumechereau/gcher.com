@@ -3,7 +3,7 @@ categories:
   - C
   - code
   - test
-alias: c-unit-tests-constructor-attribute.html
+aliases: c-unit-tests-constructor-attribute.html
 title: Unit Tests in C with the constructor attribute
 date: 2016-09-02
 ---

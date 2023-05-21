@@ -1,5 +1,5 @@
 ---
-alias: /compress-pdf-files.html
+aliases: /compress-pdf-files.html
 subtitle: A useful tool for freelancers
 title: Bash script to compress pdf files
 date: 2014-03-03

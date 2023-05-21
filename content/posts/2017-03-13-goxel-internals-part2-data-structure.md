@@ -5,7 +5,7 @@ categories:
   - code
   - C
   - C99
-alias: /goxel-internals-part2-data-structure.html
+aliases: /goxel-internals-part2-data-structure.html
 title: 'Goxel Voxel Editor Internals - Part 2: voxel data structure'
 date: 2017-03-13
 ---

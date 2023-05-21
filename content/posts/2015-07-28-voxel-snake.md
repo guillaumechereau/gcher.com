@@ -3,7 +3,7 @@ categories:
   - game
   - noctua
   - snake
-alias: /voxel-snake.html
+aliases: /voxel-snake.html
 subtitle: A small video game project
 title: Voxel Snake 3D
 date: 2015-07-28

@@ -6,7 +6,7 @@ categories:
   - doom
   - quake
   - C++
-alias: /entity-reference.html
+aliases: /entity-reference.html
 title: Comparison of Doom 1, Quake, and Doom 3 entity references system
 date: 2015-04-29
 ---

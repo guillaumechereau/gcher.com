@@ -7,7 +7,7 @@ categories:
   - game
   - voxel
   - invaders
-alias: /app-of-the-day.html
+aliases: /app-of-the-day.html
 subtitle: How we switched our app to a free+ads business model
 title: How our ads based game makes more revenue than our paid version
 date: 2014-06-02

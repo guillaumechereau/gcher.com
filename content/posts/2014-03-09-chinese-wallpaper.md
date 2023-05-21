@@ -4,7 +4,7 @@ categories:
   - productivity
   - gnome
   - linux
-alias: /chinese-wallpaper.html
+aliases: /chinese-wallpaper.html
 subtitle: Show Chinese words on your gnome desktop
 title: Vocabulary learning wallpaper with python and gnome
 date: 2014-03-09

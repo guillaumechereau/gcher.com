@@ -5,7 +5,7 @@ categories:
   - code
   - C
   - C99
-alias: /goxel-internal-part1-voxel.html
+aliases: /goxel-internal-part1-voxel.html
 title: 'Goxel Voxel Editor Internals - Part 1: voxels and pixels'
 date: 2017-03-09
 ---

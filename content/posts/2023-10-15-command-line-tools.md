@@ -61,7 +61,7 @@ a root directory and creates one before unpacking if needed, preventing
 the annoyance of extracting many files in the wrong directory.
 Who remembers all the arguments needed when calling `unzip` or `tar`?
 
-```plain
+```plaintext
 $ aunpack blenderkit-v3.4.0.230122.zip
 Archive:  blenderkit-v3.4.0.230122.zip
    creating: Unpack-8063/blenderkit/

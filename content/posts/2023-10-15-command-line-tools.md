@@ -15,7 +15,7 @@ ANSI escaping to colorize their outputs)
 
 ## [ag] -- The Silver Searcher
 
-```text
+```plaintext
 $ ag LookAdjust
 src/g_game.cpp
 797:static int LookAdjust(int look)
@@ -34,7 +34,7 @@ project.
 
 ## [tig] -- Text mode interface for Git
 
-```text
+```plaintext
 2023-08-24 20:40 +0800 Guillaume    o [master] {origin/master} {origin/HEAD} Attempt at fixing windows build since last commit
 2023-08-23 16:02 +0800 Guillaume    o Fix security issue in quickjs-libc.c
 2023-07-24 18:11 +0800 Guillaume    o Fix compilation on OSX
@@ -83,7 +83,7 @@ browse my file system and copy files from one directory to another, and
 since I am a vim user, vifm does the job very well.  I would not recommend
 it to non vim users though, since all the shortcuts are the same as in vim.
 
-```text
+```plaintext
  ~/Projects/goxel                                 ~/Projects/goxel/src
  *../                 4 K                          ../                 4 K
   android/            4 K                          assets/             4 K
@@ -123,7 +123,7 @@ Ledger itself is not the simplest of the command from this list, but there is
 
 ## [ncdu] -- NCurses Disk Usage
 
-```text
+```plaintext
 ncdu 1.18 ~ Use the arrow keys to navigate, press ? for help
 --- /home/guillaume/Projects/goxel -------------------------
   778.6 MiB [######################] /android

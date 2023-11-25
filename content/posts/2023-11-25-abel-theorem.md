@@ -1,7 +1,7 @@
 ---
 categories: [math, groups]
 title: Abel's theorem
-date: 2023-11-26
+date: 2023-11-25
 math: true
 ---
 

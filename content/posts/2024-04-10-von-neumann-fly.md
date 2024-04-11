@@ -1,6 +1,6 @@
 ---
 categories: [Physics]
-title: How did John von Neumann solved the fly and trains puzzle?
+title: How did John von Neumann solved the fly and bicycles puzzle?
 date: 2024-04-10
 math: true
 ---
